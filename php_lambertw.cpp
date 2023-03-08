@@ -21,7 +21,7 @@ PHP_FUNCTION(lambertw_fukushima)
     Z_PARAM_DOUBLE(n);
   ZEND_PARSE_PARAMETERS_END();
 
-  ret = Fukushima::LambertW(0, n);
+  ret = Fukushima::LambertW(-1, n);
 
   RETURN_DOUBLE(ret);
 }
@@ -34,7 +34,7 @@ PHP_FUNCTION(lambertw)
     Z_PARAM_DOUBLE(n);
   ZEND_PARSE_PARAMETERS_END();
 
-  ret = utl::LambertW(0, n);
+  ret = utl::LambertW(-1, n);
 
   RETURN_DOUBLE(ret);
 }
